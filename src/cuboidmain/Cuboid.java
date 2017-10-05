@@ -13,12 +13,12 @@ public class Cuboid<T> {
     private T length;
     private T breadth;
     private T height;
-
+    //Default constructor to prevent errors
     public Cuboid() {
     }
 
     
-    
+    //Constructor that sets the length, breadth, and height
     public Cuboid(T length, T breadth, T height) {
         this.length = length;
         this.breadth = breadth;
