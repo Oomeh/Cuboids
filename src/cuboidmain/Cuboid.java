@@ -37,12 +37,6 @@ public class Cuboid<T> {
     public void setHeight(T height) {
         this.height = height;
     }
-    //Overrides the toString method to make it display the length, breadth, and height after calling the get methods
-    @Override
-    public String toString()
-    {
-        return "The length is " + getLength() + ", the breadth is " + getBreadth() + " and the height is " + getHeight();
-    }
     public double getVolume()
     {
         //Converts the values to strings so that they can be converted back into doubles
@@ -57,7 +51,15 @@ public class Cuboid<T> {
         height = Height.doubleValue();
         //Multiplies the values
         double total = length * breadth * height;
-        System.out.println("The volume is " + total);
-        return 1;
+        return total;
+    }    
+    
+    //Overrides the toString method to make it display the length, breadth, and height after calling the get methods
+    @Override
+    public String toString()
+    {
+        return "The length is " + getLength() + ", the breadth is " + getBreadth()
+                + " and the height is " + getHeight() + ". The volume is " + getVolume();
     }
+
 }
