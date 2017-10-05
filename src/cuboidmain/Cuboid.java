@@ -54,14 +54,11 @@ public class Cuboid<T> {
     {
         //Converts the values to strings so that they can be converted back into doubles
         Double Length = new Double(getLength().toString());
-        double length;
-        length = Length.doubleValue();
+        double length = Length.doubleValue();
         Double Breadth = new Double(getBreadth().toString());
-        double breadth;
-        breadth = Breadth.doubleValue();
+        double breadth = Breadth.doubleValue();
         Double Height = new Double(getHeight().toString());
-        double height;
-        height = Height.doubleValue();
+        double height = Height.doubleValue();
         //Multiplies the values
         double total = length * breadth * height;
         return total;
