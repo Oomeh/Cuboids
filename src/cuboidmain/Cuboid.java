@@ -13,6 +13,19 @@ public class Cuboid<T> {
     private T length;
     private T breadth;
     private T height;
+
+    public Cuboid() {
+    }
+
+    
+    
+    public Cuboid(T length, T breadth, T height) {
+        this.length = length;
+        this.breadth = breadth;
+        this.height = height;
+    }
+    
+    
     public T getLength() {
         return length;
     }
