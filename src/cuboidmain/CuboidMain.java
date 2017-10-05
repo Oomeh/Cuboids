@@ -23,8 +23,6 @@ public class CuboidMain {
         c1.setLength(5);
 
         System.out.println(c1.toString());
-
-
         System.out.println(c2.toString());        
         
     }
